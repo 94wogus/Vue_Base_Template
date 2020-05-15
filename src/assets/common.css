@@ -1,0 +1,112 @@
+/* ==================== common css ==================== */
+a {
+  text-decoration:none;
+}
+img {
+  border: 0 none;
+}
+fieldset{
+  border: 0 none;
+}
+button {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #444;
+    word-break: keep-all;
+    word-wrap: break-word;
+}
+/* ==================== header css ==================== */
+header{
+  position: fixed;
+}
+.headerTitle{
+  display: flex;
+  font-size: max(min(5vw, 25px), 15px);
+  font-weight: bold;
+}
+.headerTitlex{
+  font-size:max(min(3vw, 15px), 9px);
+  margin-right: max(min(1vw, 5px), 3px);
+}
+.headerOrg{
+  text-shadow: 0px 1px 5px white, 0px -1px 5px white, 1px 0px 5px white, -1px 0px 5px white; 
+}
+.headerfunc{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.search_hidden{
+  opacity: 0;
+  width: 1px;
+}
+.search_show{
+  opacity: 1;
+  width: 25vw;
+  max-width: 500px;
+}
+/* ==================== main image ==================== */
+.main_image{
+  display: inline-flex;
+  justify-content: space-around;
+  height: 400px;
+  background-color: #f4efeb;
+  width: 100vw;
+}
+.potato_img {
+  margin: 8vh 1vw 8vh 30%;
+  width: auto;
+  height: calc(-16vh + 400px);
+  border-style: none;
+}
+.word_img {
+  margin:22vh 30% 8vh 1vw;
+  width: auto;
+  height: calc(-30vh + 400px);
+  border-style: none;
+}
+/* ==================== sidebar image ==================== */
+.v-navigation-drawer__content{
+  display: flex;
+  flex-direction: column;
+}
+.sidebase{
+  align-self: flex-end;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+}
+.sideimgwrap{
+  height: 60px;
+  width: 50px;
+  border-radius: 15px;
+  margin-right: 15px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sideimg{
+  height: 80px;
+  width: 80px;
+  object-fit: cover;
+}
+.sideitem{
+  display: flex;
+  align-items: center;
+  margin: 20px 0px;
+}
+.sideiconwrap{
+  margin: 0px 10px !important;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+}
+.sidetxt{
+  font-size: 20px !important;
+}
