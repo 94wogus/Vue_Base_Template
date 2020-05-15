@@ -6,9 +6,7 @@
     >   
         <v-layout row justify-space-between style="padding: 0px 20px; align-items: center;">
             <div class="headerTitle" @click="goMain()">
-                <span class="gray--text">Potato</span>
-                <span class="gray--text headerTitlex">'s</span>
-                <span class="headerOrg">Blog</span>
+                <span class="gray--text">Vue Sample</span>
             </div>
             <div class="headerfunc">
                 <v-btn

@@ -8,12 +8,7 @@
             <v-list-item-content>
                 <v-list-item-title>
                     <div class="headerTitle" style="display: flex; justify-content: center;">
-                        <div class="sideimgwrap">
-                            <img :src="jaehyun" class="sideimg">
-                        </div>
-                        <span>Potato</span>
-                        <span class="headerTitlex">'s</span>
-                        <span >Blog</span>
+                        <span>Vue Sample</span>
                     </div>
                 </v-list-item-title>
             </v-list-item-content>
@@ -48,13 +43,12 @@
 
 <script>
 import { bus } from "@/main";
-import {menuList, snsList} from "@/default"
+import {menuList, snsList} from "@/constant"
 
 export default {
     name:"sidebar",
     data(){
         return{
-            jaehyun: require('@assets/image/jaehyun.jpg'),
             menuList: menuList,
             snsList: snsList,
             navigation: null
@@ -62,11 +56,11 @@ export default {
     },
     methods:{
         goRoute(name){
-            var noready = ["post", "project"]
-            if (noready.includes(name)){
-                alert("아직 준비중인 페이지 입니다")
-                return
-            }
+            // var noready = ["post", "project"]
+            // if (noready.includes(name)){
+            //     alert("아직 준비중인 페이지 입니다")
+            //     return
+            // }
             this.$router.push({ name: name });
         },
     },
