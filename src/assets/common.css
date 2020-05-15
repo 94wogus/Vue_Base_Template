@@ -49,23 +49,12 @@ header{
 }
 /* ==================== main image ==================== */
 .main_image{
-  display: inline-flex;
+  display: flex;
   justify-content: space-around;
+  align-items: center;
   height: 400px;
   background-color: #f4efeb;
   width: 100vw;
-}
-.potato_img {
-  margin: 8vh 1vw 8vh 30%;
-  width: auto;
-  height: calc(-16vh + 400px);
-  border-style: none;
-}
-.word_img {
-  margin:22vh 30% 8vh 1vw;
-  width: auto;
-  height: calc(-30vh + 400px);
-  border-style: none;
 }
 /* ==================== sidebar image ==================== */
 .v-navigation-drawer__content{
